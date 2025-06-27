@@ -41,6 +41,8 @@ The app will open in your default browser at `http://localhost:8501/`.
 # Ensure that 'mlb_hit_pitch_stats.db' is present in the project root directory.
 ```
 ## Screenshot
-![Streamlit app screenshot (Hitters)](screenshots/MLB Player Stats_Hit.png)
-![Streamlit app screenshot (Pitchers)](screenshots/MLB Player Stats_Pitch.png)
+
+![MLB Player Stats_Streamlit App Preview - Hitters](https://github.com/user-attachments/assets/68757ddd-ff66-4aa3-9161-07193a31855d)
+
+![MLB Player Stats_Streamlit App Preview - Pitchers](https://github.com/user-attachments/assets/e4e3b453-a5fe-4ff6-8b2a-96143474cdc5)
 
