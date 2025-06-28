@@ -228,7 +228,7 @@ if player_type == "Hitter":
         ],
     ))
 
-    #Highlight the selected player in red
+        #Highlight the selected player in red
     if selected_player in merged_df['name'].values:
         selected_stats = merged_df[merged_df['name'] == selected_player]
         fig_sb_cs.add_trace(go.Scatter(
@@ -296,11 +296,13 @@ if player_type == "Hitter":
             f"**{selected_player}** successfully stole **{sb}** bases and was caught **{cs}** times.\n\n"
             f"They have a stolen base success rate of **{success_rate}%**, ranking **#{player_rank}** out of {total_number_of_players} players."
         )
+    #If selected player doesn't exist in the dataframe
+    else:
+        #Display a warning if there's no data for the selected player
+        st.markdown(f"Sorry! There is no stolen base or caught stealing data available for **{selected_player}**.")
+
     #Plot
     st.plotly_chart(fig_sb_cs, use_container_width=True)
-
-
-
 
 #####################################################################################################################
 ####CHART 4 -  Games Saved vs Games Pitched
